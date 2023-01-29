@@ -1,0 +1,38 @@
+<html> 
+   <head>
+     <title> DAVID'S simple Calculator</title> 
+  </head> 
+     <!-- this is the stylesheet link -->
+  <link rel="stylesheet" href="style.css"> 
+  <!-- this is the body -->
+  <body bgcolor= "#000000" text= "gold"> 
+  <form name="calculator" >
+    <div class="container">
+      <!-- this for the result display-->
+      <div class="display">
+     <input type="textfield" name="ans" placeholder="0" class="display"disabled >
+      </div>
+     <br>
+     <!-- this is the buttons html code -->
+    <div class="button">
+      <div class="row">
+       <input type="button" value="1" onClick="document.calculator.ans.value+='1'"> <input type="button" value="2" onClick="document.calculator.ans.value+='2'"> <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+        <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+      </div>
+  <div class="row"> 
+      <input type="button" value="5" onClick="document.calculator.ans.value+='5'"> <input type="button" value="6" onClick="document.calculator.ans.value+='6'"> 
+     <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+    <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+  </div>
+  <div class="row">
+     <input type="button" value="9" onClick="document.calculator.ans.value+='9'"> 
+    <input type="button" value="-" onClick="document.calculator.ans.value+='-'"> <input type="button" value="+" onClick="document.calculator.ans.value+='+'"> <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+  </div>
+  <div class="row"> 
+      <input type="button" value="/" onClick="document.calculator.ans.value+='/'"> <input type="button" value="0" onClick="document.calculator.ans.value+='0'"> 
+       <input type="reset" value="CE" onClick="document.calculator.ans.value+='RESET'">
+        <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)" class="red"> 
+  </div>
+</form> 
+</body> 
+</html>
